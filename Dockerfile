@@ -9,12 +9,13 @@ RUN apk add boost-chrono=1.67.0-r2 \
             boost-program_options=1.67.0-r2 \
             libressl2.7-libcrypto=2.7.4-r1 \
             libressl2.7-libssl=2.7.4-r1 \
+            unbound-libs=1.8.1-r0 \
     --repository https://nl.alpinelinux.org/alpine/edge/main \
     --no-cache
 RUN apk add miniupnpc=2.1-r0 \
     --repository https://nl.alpinelinux.org/alpine/edge/community \
     --no-cache
-RUN apk add monero=0.12.3.0-r1 \
+RUN apk add monero=0.13.0.4-r0 \
     --repository https://nl.alpinelinux.org/alpine/edge/testing \
     --no-cache && \
     mkdir /var/lib/monero
