@@ -8,7 +8,7 @@ RUN apk add boost-chrono=1.72.0-r6 \
             boost-program_options=1.72.0-r6 \
     --repository https://nl.alpinelinux.org/alpine/edge/main \
     --no-cache
-RUN apk add monero=0.16.0.0-r0 \
+RUN apk add monero=0.16.0.3-r0 \
     --repository https://nl.alpinelinux.org/alpine/edge/testing \
     --no-cache && \
     mkdir /var/lib/monero
